@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #292C33;
+    background-color: #EEEFF3;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*============================HEADER============================*/
+
+.header {
+    background-color: #000;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(231, 33, 33);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.menu-srodek {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-przyciski {
+    margin-right: 15px;
+    font-size: 15px;
+    color: rgb(92, 92, 92);
+}
+
+.menu-przyciski:nth-child(1) {
+
+    border-bottom: 2px solid red;
+    padding: 3px;
+}
+
+.menu-przyciski:nth-child(5) {
+    color: #fff;
+    background-color: rgb(252, 8, 8);
+    border-radius: 20px 20px 20px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 13px;
+}
+
+/*FRANCZYZA*/
+.menu-przyciski:nth-child(5):hover {
+    background-color: rgb(209, 9, 9);
+    transition: all 0.2s;
+}
+
+.menu-przyciski:nth-child(2):hover{
+    border-bottom: 2px solid red;
+    padding: 3px;
+    transition: all 0.3s;
+}
+
+.menu-przyciski:nth-child(3):hover{
+    border-bottom: 2px solid red;
+    padding: 3px;
+    transition: all 0.2s;
+}
+
+.menu-przyciski:nth-child(4):hover{
+    border-bottom: 2px solid red;
+    padding: 3px;
+    transition: all 0.2s;
+}
+
+
+/*============================MAIN============================*/
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    filter: brightness(50%);
+    
+}
+
+.main {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 225px;  /*Czy da się to ustawić tak aby było równo z logo? W sensie bez podawania dokładnej wartosci 225px */
+    margin-top: 200px;
+    
+}
+
+.heading1 {
+    font-size: 75px;
+    font-weight: 500;
+
+}
+
+.tekst {
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.przycisk2 {
+    color: red;
+    border: solid 2px red;
+    border-radius: 30px 30px;
+    padding: 7px 7px;
+    align-items: left;
+    transition: all 0.4s;
+    max-width: 175px;  /*W momencie gdy nie ma ustawionego max-width po wlaczeniu flexboxa przycisk jest na calą dlugość strony */
+}
+
+.przycisk2:hover {
+    color: white;
+    font-weight: 700;
+    background-color: #eb0a0a;
+    /* transform: translateY(-1px); */
+    transform: scale(1.03);
+    
+}
